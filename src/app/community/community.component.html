@@ -1,0 +1,40 @@
+<!-- <ul class="list-group mt-4">
+  <li
+    class="list-group-item list-group-item-secondary"
+    *ngFor="let q of questions"
+  >
+    <h2 class="text-secondary">{{ q.name }}</h2>
+    <p class="text-success">{{ q.email }}</p>
+  </li>
+</ul> -->
+<a [routerLink]="['/community/addQuestion']" class="btn btn-primary my-3"
+  ><i class="fa fa-plus"></i> Add Question</a
+>
+<div class="card my-2" *ngFor="let q of questions">
+  <div class="card-body">
+    <h2 class="card-title text-primary">{{ q.body }}</h2>
+    <h6 class=" text-info" *ngFor="let qs of q.communityQuestionAnswers">
+      {{ qs.body }}
+    </h6>
+
+    <!-- <h2 class="text-primary alert alert-danger">{{ q.communityQuestionAnswers }}</h2> -->
+    <!-- <div class="my-2" *ngFor="let q of questions">
+      <h2 class="text-primary alert alert-danger">{{ q.communityQuestionAnswers  }}</h2>
+
+  </div> -->
+    <!--   
+    <div class="my-2" *ngFor="let ans of answers">
+        <h2 class="text-primary alert alert-danger">{{ ans.body }}</h2>
+        <h2 class="text-primary alert alert danger">{{ans.CommuintyQuestion}}</h2>
+
+    </div> -->
+
+    <!-- <h6 class="card-title text-success">{{ q.ModelAnswer }}</h6> -->
+    <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+    <!-- <p class="card-text">{{ q.email }}</p> -->
+    <!-- <a class="card-link"
+      ><i [ngClass]="['fa', 'fa-heart-o']" (click)="onLike(q)"></i
+    ></a> -->
+    <!-- <a href="#" class="card-link">Another link</a> -->
+  </div>
+</div>

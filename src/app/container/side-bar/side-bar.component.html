@@ -1,0 +1,169 @@
+<!-- 
+            <div>
+                <div>
+                    <img src="../../assets/imgs/user.png" width="50%" height="50%" class="photo" />
+                    <div class="user-name">Israa Mohamed</div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-secondary btn-lg btn-block collapsed collapseSide" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Career Paths
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show " aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <p class="pp">  Anim pariatur cliche reprehenderit,
+                                    enim eiusmod high life accusamus terry richardson
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-secondary btn-lg btn-block collapsed collapseSide" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo" >
+                                        Your Rank
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit,
+                                    enim eiusmod high life accusamus terry richardson ad squid.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-secondary btn-lg btn-block collapsed collapseSide" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Community
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit,
+                                    enim eiusmod high life accusamus terry richardson ad squid.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-secondary btn-lg btn-block collapsed collapseSide" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Home
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit,
+                                    enim eiusmod high life accusamus terry richardson ad squid.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-secondary btn-lg btn-block collapsed collapseSide" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Log Out
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> -->
+            <div class="admin-sidebar">
+                <div class="sidebar-background"
+                    style="background-image: url('../../assets/imgs/bg1.jpg')">
+                    <div class="sidebar-wrapper">
+                        <div class="logo">
+                            <img [src]="userInfo.Image" class="img-fluid photo-radius">
+                        </div>
+                        <div class="user-info">
+                            <a class="" data-toggle="collapse" href="#user-info" aria-expanded="false"
+                                aria-controls="user-info">
+                                <h3>{{userInfo.UserName}} <i class="caret"></i></h3>
+                            </a>
+                            <ul class="collapse" id="user-info">
+                                <li><a href="file:///F:/freelancer/aloverasales/admin-profile.html" class="nav-link">My Profile</a></li>
+                                <li><a href="file:///F:/freelancer/aloverasales/editadmin-profile.html" class="nav-link">Edit Profile</a></li>
+                            </ul>
+                        </div>
+                        <ul class="sidebar-nav">
+                         
+                            <li class="" data-toggle="collapse" href="#collapseExample"
+                            (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                                <a class="nav-link">
+                                    <i class="fa fa-cube"></i>
+                                    Category <i class="caret"></i>
+                                </a>
+                                <ul class="collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
+                                    <li>Add Category</li>
+                                    <li>All Category</li>
+                                </ul>
+                            </li>
+                            <li class="" data-toggle="collapse" href="#menu2" aria-expanded="false" aria-controls="menu2">
+                                <a class="nav-link">
+                                    <i class="fa fa-signal"></i> Career Paths <i class="caret"></i>
+                                </a>
+                                <ul class="collapse" id="menu2">
+                                    <li><a href="file:///F:/freelancer/aloverasales/add-products.html" class="nav-link">Add Product</a></li>
+                                    <li><a href="file:///F:/freelancer/aloverasales/view-products.html" class="nav-link">All Products</a></li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a class="nav-link" routerLink="/rank">
+                                    <i class="fa fa-star"></i> Your Rank
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="nav-link" routerLink="/community">
+                                    <i class="fa fa-users"></i>Community
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="nav-link" href="file:///F:/freelancer/aloverasales/customer.html">
+                                    <i class="fa fa-home"></i> Home
+                                </a>
+                            </li>
+                            <li class="" data-toggle="collapse" href="#menu3" aria-expanded="false" aria-controls="menu3">
+                                <a class="nav-link">
+                                    <i class="fa fa-sign-out"></i> Log Out <i class="caret"></i>
+                                </a>
+                                <ul class="collapse" id="menu3">
+                                    <li><a href="file:///F:/freelancer/aloverasales/add-employee.html" class="nav-link">Add Product</a></li>
+                                    <li><a href="file:///F:/freelancer/aloverasales/view-employee.html" class="nav-link">All Products</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>

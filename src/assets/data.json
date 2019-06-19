@@ -1,0 +1,32 @@
+[
+  [
+    {
+      "Id": 1,
+      "Body": "What is C#?",
+      "like": false,
+      "icon": "fa-heart-o",
+      "ModelAnswer": "C# is an object oriented, type safe and managed language that is compiled by .Net framework to generate Microsoft Intermediate Language."
+    },
+    {
+      "Id": 2,
+      "Body": "Can multiple catch blocks be executed?",
+      "like": false,
+      "icon": "fa-heart-o",
+      "ModelAnswer": "No, Multiple catch blocks can't be executed. Once the proper catch code executed, the control is transferred to the finally block and then the code that follows the finally block gets executed."
+    },
+    {
+      "Id": 3,
+      "Body": "What is Jagged Arrays?",
+      "like": false,
+      "icon": "fa-heart-o",
+      "ModelAnswer": "The array which has elements of type array is called jagged array. The elements can be of different dimensions and sizes. We can also call jagged array as Array of arrays."
+    },
+    {
+      "Id": 4,
+      "Body": "Can multiple catch blocks be executed?",
+      "like": false,
+      "icon": "fa-heart-o",
+      "ModelAnswer": "No, Multiple catch blocks can't be executed. Once the proper catch code executed, the control is transferred to the finally block and then the code that follows the finally block gets executed."
+    }
+  ]
+]

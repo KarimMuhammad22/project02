@@ -1,0 +1,19 @@
+.navbarSupportedContent {
+    position: relative;
+}
+.search {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    right: 0;
+    border-radius: 0;
+}
+nav.navbar-light .collapse .navbar-nav li a {
+    font-size: 16px;
+}
+.btn-search {
+    background-color: #0156b8;
+    border: 0;
+    color: #fff;
+    
+}

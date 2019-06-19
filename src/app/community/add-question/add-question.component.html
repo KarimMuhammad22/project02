@@ -1,0 +1,14 @@
+<form (ngSubmit)="onAdd(f)">
+  <div class="form-group my-5">
+    <!-- <label for="AddQ">Add Question</label> -->
+    <textarea
+      class="form-control"
+      id="AddQ"
+      placeholder="Type your question .."
+      [(ngModel)]="q.questionBody"
+      name="qbody"
+    ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+  <!-- {{ q | json }} -->
+</form>

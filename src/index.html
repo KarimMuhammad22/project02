@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FinalProject</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <script src="../node_modules/bootstrap/js/src/dropdown.js"></script> -->
+  <!-- <script>
+      var arr = ["imgs/slide1.jpg", "imgs/slide2.jpeg", "imgs/slide3.jpeg", "imgs/slide4.jpg"
+ ];
+ var body = document.querySelector('body');
+  var img = document.getElementById("img1");
+  let counter = 1;
+  var next = document.getElementById('next');
+  var prev = document.getElementById("prev");
+  var form1 = document.querySelector('#form1');
+var form2 = document.querySelector('#form2');
+var signUpBtn = document.querySelector('#signUpBtn');
+
+var signup = document.querySelector('#signup');
+
+var input2 = document.querySelector('#userName2');
+
+var displayform2 = document.querySelector('#display-form2');
+
+var exit2 = document.querySelector('#exit2');
+
+  ////////////////next w prv buttons
+next.addEventListener('click', function (e) {
+  setTimeout(function () {
+      // img.style.transform = 'scale(1.2)';
+  }, 4000);
+  img.style.transform = 'scale(1)';
+  img.src = arr[counter % arr.length];
+  counter++;
+
+});
+setInterval(function () {
+  setTimeout(function () {
+      //img.style.transform = 'scale(1.2)';
+  }, 1000);
+  img.style.transform = 'scale(1)';
+  img.src = arr[counter % arr.length];
+  counter++;
+}, 25000);
+prev.addEventListener('click', function (e) {
+  img.src = arr[counter % arr.length];
+  if (counter > 1) {
+      counter--;
+  }
+  else {
+      counter = arr.length - 1
+  }
+
+});
+signup.addEventListener('click', function () {
+displayform2.style.transform = 'scale(1)';
+form2.style.transform = 'scale(1)';
+next.style.transform='scale(0)';
+prev.style.transform='scale(0)';
+body.style.overflow = 'hidden';
+input2.focus();
+
+});
+exit2.addEventListener('click', function (e) {
+e.preventDefault();
+displayform2.style.transform = 'scale(0)';
+form2.style.transform = 'scale(0)';
+next.style.transform='scale(1)';
+prev.style.transform='scale(1)';
+body.style.overflow = 'scroll';
+});
+
+  
+  </script> -->
+
+
+
+
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
